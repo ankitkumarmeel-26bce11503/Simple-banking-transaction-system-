@@ -1,7 +1,6 @@
-﻿balance = 51520
+balance = 5000
 def check_balance():
     print("\nYour current balance is: ₹", balance)
-
 
 def deposit_money():
     global balance
@@ -12,7 +11,6 @@ def deposit_money():
         print("Updated balance: ₹", balance)
     else:
         print("Please enter a valid amount.")
-
 
 def withdraw_money():
     global balance
@@ -28,50 +26,38 @@ def withdraw_money():
         print("Remaining balance: ₹", balance)
 
 
-
-
 def banking_system():
 
-
-    print("=========================================")
+    print("====================================")
     print("       SIMPLE BANKING SYSTEM")
-    print("=========================================")
-
+    print("====================================")
 
     while True:
 
-
         print("\n----------- MENU -----------")
-        print("1. check balance ")
-        print("2. deposit money ")
-        print("3. withdrawn money ")
-        print("4. exit")
+        print("1. Check Balance")
+        print("2. Deposit Money")
+        print("3. Withdraw Money")
+        print("4. Exit")
         print("----------------------------")
 
-
         choice = input("Enter your choice: ")
-
 
         if choice == "1":
             check_balance()
 
-
         elif choice == "2":
-            deposit_money ()
-
+            deposit_money()
 
         elif choice == "3":
-            withdraw_money ()
-
+            withdraw_money()
 
         elif choice == "4":
             print("\nThank you for using our banking system.")
-            print("Have a grateful day ")
+            print("Have a nice day!")
             break
         else:
-            print("\n sorry for the inconvenience . Please try again.")
-
-
+            print("\nInvalid choice. Please try again.")
 
 
 # Start the banking system
