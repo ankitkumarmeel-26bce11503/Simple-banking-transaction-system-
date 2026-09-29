@@ -1,0 +1,159 @@
+﻿Project Statement
+Project Title
+Simple Banking System
+Introduction
+The Simple Banking System is a basic console-based application developed using Python. The purpose of this project is to demonstrate fundamental programming concepts by creating a simple banking environment where users can perform basic financial operations through a menu-driven interface.
+The application starts with an initial balance of ₹5000 and allows the user to check their balance, deposit money, withdraw money, or exit the system.
+Problem Statement
+Managing basic banking operations manually can be inconvenient. This project provides a simple computerized solution for performing common banking operations through an easy-to-use command-line interface.
+The system should allow a user to:
+1. Check their current account balance.
+2. Deposit money into their account.
+3. Withdraw money from their account.
+4. Prevent withdrawals when the requested amount exceeds the available balance.
+5. Reject invalid amounts such as zero or negative values.
+6. Exit the application safely.
+Objectives
+The main objectives of this project are:
+* To understand the basics of Python programming.
+* To implement functions for different operations.
+* To use conditional statements for decision-making.
+* To use loops for continuous menu interaction.
+* To accept and process user input.
+* To perform basic arithmetic calculations.
+* To implement simple validation for banking transactions.
+* To develop a beginner-friendly console application.
+Functional Requirements
+The system provides the following functionality:
+Check Balance
+The user can view their current account balance at any time.
+Deposit Money
+The user can enter an amount to deposit. If the amount is greater than zero, it is added to the current balance.
+Withdraw Money
+The user can enter an amount to withdraw. The system verifies that:
+* The amount is greater than zero.
+* The requested amount does not exceed the current balance.
+If both conditions are satisfied, the amount is deducted from the balance.
+Exit
+The user can select the exit option to terminate the banking system.
+Initial Balance
+The system starts with:
+₹5000
+The balance changes according to the deposits and withdrawals performed during the current program session.
+Technologies Used
+* Programming Language: Python
+* Application Type: Console-based application
+* Input Method: Keyboard
+* Output Method: Command-line interface
+Programming Concepts Used
+The project demonstrates the following Python concepts:
+* Variables
+* Functions
+* Global variables
+* if, elif, and else statements
+* while loop
+* User input using input()
+* Arithmetic operators
+* Basic validation
+* Function calls
+* Program control using break
+System Flow
+Start
+  |
+  v
+Initialize Balance = ₹5000
+  |
+  v
+Display Banking Menu
+  |
+  v
+Get User Choice
+  |
+  +----> 1. Check Balance ----> Display Balance
+  |
+  +----> 2. Deposit Money ----> Validate Amount
+  |                              |
+  |                              v
+  |                         Update Balance
+  |
+  +----> 3. Withdraw Money ---> Validate Amount
+  |                              |
+  |                     +--------+--------+
+  |                     |                 |
+  |                Sufficient         Insufficient
+  |                  Balance             Balance
+  |                     |                 |
+  |                     v                 v
+  |                Update Balance    Show Error
+  |
+  +----> 4. Exit ------> End Program
+  |
+  +----> Invalid Choice --> Display Error
+                              |
+                              v
+                         Display Menu Again
+
+
+Expected Outcome
+After executing the program, the user can interact with the banking system through the menu and perform basic banking operations.
+For example:
+====================================
+       SIMPLE BANKING SYSTEM
+====================================
+
+
+----------- MENU -----------
+1. Check Balance
+2. Deposit Money
+3. Withdraw Money
+4. Exit
+----------------------------
+
+
+Enter your choice: 1
+
+
+Your current balance is: ₹ 5000
+
+
+If the user deposits ₹1000:
+₹ 1000.0 has been deposited successfully.
+Updated balance: ₹ 6000.0
+
+
+If the user withdraws ₹500:
+₹ 500.0 has been withdrawn successfully.
+Remaining balance: ₹ 5500.0
+
+
+Advantages
+* Simple and easy to use.
+* Beginner-friendly interface.
+* Demonstrates important Python programming concepts.
+* Provides basic validation for transactions.
+* Uses separate functions for different banking operations.
+* Does not require external libraries.
+Limitations
+The current version is designed for educational purposes and has some limitations:
+* The balance is not stored permanently.
+* The balance resets to ₹5000 when the program is restarted.
+* It supports only one account.
+* There is no user authentication.
+* There is no transaction history.
+* It does not use a database.
+* Non-numeric input may cause an error because the program uses float() for input conversion.
+Future Scope
+The project can be improved in the future by adding:
+* User registration and login.
+* PIN/password authentication.
+* Multiple customer accounts.
+* Database integration.
+* Transaction history.
+* Money transfer between accounts.
+* Account statements.
+* Improved error handling.
+* A graphical user interface (GUI).
+* Use of Decimal for more accurate monetary calculations.
+Conclusion
+The Simple Banking System is a beginner-level Python project that demonstrates how basic banking operations can be implemented using programming fundamentals. It provides a practical way to understand functions, loops, conditional statements, variables, user input, and basic validation.
+Although the current application is simple and intended for educational use, it provides a foundation that can be extended into a more advanced banking management system.
